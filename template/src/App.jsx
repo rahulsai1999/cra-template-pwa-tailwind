@@ -11,8 +11,7 @@ const App = () => {
   return (
     <ErrorBoundary
       onError={(error, componentStack) => {
-        console.log({ error, componentStack });
-        Logger({ error, componentStack, location: window.location });
+        console.log({ error, componentStack, location: window.location });
       }}
       fallbackRender={({ resetErrorBoundary }) => (
         <ErrorPage type={503} resetErrorBoundary={resetErrorBoundary} />
