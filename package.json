@@ -1,6 +1,6 @@
 {
   "name": "cra-template-pwa-tailwind",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "react",
     "create-react-app",
@@ -10,9 +10,6 @@
   ],
   "description": "Custom PWA template for CRA, Redux",
   "license": "MIT",
-  "engines": {
-    "node": ">=14"
-  },
   "files": [
     "template",
     "template.json"
