@@ -15,17 +15,12 @@ const Signup = lazy(() => import("./auth/signup"));
 const Login = lazy(() => import("./auth/login"));
 const Logout = lazy(() => import("./auth/logout"));
 
-const UP = JSON.parse(localStorage.getItem("userProfile"));
-const bg = UP ? (UP.settings.isDarkTheme ? "#12263F" : "white") : "white";
-
 const Router = () => {
   return process.env.REACT_APP_MAINTENANCE_MODE ? (
     <Maintenance />
   ) : (
     <BrowserRouter>
-      <Suspense
-        fallback={<div style={{ height: "100vh", backgroundColor: bg }}></div>}
-      >
+      <Suspense fallback={<div style={{ height: "100vh" }}></div>}>
         <Switch>
           <Route path="/" component={Index} exact />
           <Route path="/auth/admin" component={AuthAdmin} exact />

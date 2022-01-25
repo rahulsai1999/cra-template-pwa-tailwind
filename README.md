@@ -16,6 +16,7 @@
 - Forms - React Hook Form
 - CSS Utilities - Tailwind CSS
 - State Management - Redux Toolkit
+- Routing - React Router DOM
 
 ## Commands
 
